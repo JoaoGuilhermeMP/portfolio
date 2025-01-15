@@ -9,7 +9,7 @@ import { PortfolioFooterComponent } from "./portfolio-footer/portfolio-footer.co
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, PortfolioHeaderComponent, PortfolioAboutComponent, PortfolioHomeComponent, PortfolioMySkillsComponent, PortfolioContactComponent, RouterModule, PortfolioFooterComponent],
+  imports: [ PortfolioHeaderComponent, PortfolioAboutComponent, PortfolioHomeComponent, PortfolioMySkillsComponent, PortfolioContactComponent, PortfolioFooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
