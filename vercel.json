@@ -1,4 +1,10 @@
 {
+    "build": {
+      "commands": [
+        "npm install --save-dev @angular/cli",
+        "npm run build"
+      ]
+    },
     "rewrites": [
       {
         "source": "/:match*",
