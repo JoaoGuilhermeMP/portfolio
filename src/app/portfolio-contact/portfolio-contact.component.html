@@ -1,13 +1,13 @@
-<div id="contact" class="h-[900px] w-full bg-indigo-900 flex items-center font-poppins text-6xl text-neutral-100 flex-col">
-    <h1 class="text-center my-24 font-bold">Contact</h1>
-    <h2 class="text-4xl mt-2 mb-20 text-center font-bold">Are you interested in my work? <br> <span class="text-teal-500">Contact me</span></h2>
+<div id="contact" class="h-[900px] w-full bg-indigo-900 flex items-center font-poppins text-6xl text-neutral-100 flex-col max-md:w-full max-md:h-full max-md:pb-14">
+    <h1 class="text-center my-24 font-bold max-md:text-5xl max-md:my-12">Contact</h1>
+    <h2 class="text-4xl mt-2 mb-20 text-center font-bold max-md:text-3xl max-md:mb-12">Are you interested in my work? <br> <span class="text-teal-500">Contact me</span></h2>
     <div class="flex items-center justify-between gap-32">
         
-        <div class="text-xl w-[600px] text-black">
+        <div class="text-xl w-[600px] text-black max-md:w-full max-md:px-4">
            <h2 class="text-center text-neutral-100 font-bold">Send me an E-mail</h2>
-           <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+           <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" class="max-md:w-full max-md:h-full">
                 
-                <input type="text" class="w-full p-4 my-2 border-2 border-solid  rounded-lg" placeholder="Name" name="name"
+                <input type="text" class="w-full p-4 my-2 border-2 border-solid rounded-lg" placeholder="Name" name="name"
                 ngModel
                 required>
                 
@@ -19,13 +19,13 @@
                 ngModel
                 required></textarea>
                 
-                <div class="flex justify-between gap-4 ">
-                    <button type="submit" [disabled]="contactForm.invalid" class="bg-[#25D366] text-white rounded-lg cursor-pointer text-lg p-4">
+                <div class="flex justify-between gap-4 max-md:w-full">
+                    <button type="submit" [disabled]="contactForm.invalid" class="bg-[#25D366] text-white rounded-lg cursor-pointer text-lg p-4 max-md:p-0 max-md:h-16 max-md:w-20">
                         Send
                     </button>
                     
                     <a href="https://wa.me/5541995770709?text=Olá, gostaria de saber mais sobre seus serviços." target="_blank">
-                        <button class="bg-[#25D366] text-white rounded-lg cursor-pointer text-lg p-4">
+                        <button class="bg-[#25D366] text-white rounded-lg cursor-pointer text-lg p-4 max-md:p-0 max-md:h-16 max-md:w-fit">
                             Or send me a message on WhatsApp
                         </button>
                     </a>
