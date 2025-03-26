@@ -1,14 +1,23 @@
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';  
+import { FormsModule } from '@angular/forms'; 
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'; 
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+
 import emailjs from 'emailjs-com';  
 
 @Component({
   selector: 'portfolio-contact',
-  imports: [FormsModule],
+  imports: [FormsModule, FontAwesomeModule],
   templateUrl: './portfolio-contact.component.html',
   styleUrl: './portfolio-contact.component.css'
 })
 export class PortfolioContactComponent {
+
+  faWhatsapp = faWhatsapp
+
+  iconSendMessage = faPaperPlane
+
 
   private serviceID = 'service_x67c0rp';   
   private templateID = 'template_zlipfsk'; 
