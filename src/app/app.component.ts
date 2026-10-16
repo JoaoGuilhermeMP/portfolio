@@ -4,12 +4,13 @@ import { PortfolioHeaderComponent } from "./portfolio-header/portfolio-header.co
 import { PortfolioAboutComponent } from "./portfolio-about/portfolio-about.component";
 import { PortfolioHomeComponent } from "./portfolio-home/portfolio-home.component";
 import { PortfolioMySkillsComponent } from "./portfolio-my-skills/portfolio-my-skills.component";
+import { PortfolioProjectsComponent } from "./portfolio-projects/portfolio-projects.component";
 import { PortfolioContactComponent } from "./portfolio-contact/portfolio-contact.component";
 import { PortfolioFooterComponent } from "./portfolio-footer/portfolio-footer.component";
 
 @Component({
   selector: 'app-root',
-  imports: [ PortfolioHeaderComponent, PortfolioAboutComponent, PortfolioHomeComponent, PortfolioMySkillsComponent, PortfolioContactComponent, PortfolioFooterComponent],
+  imports: [ PortfolioHeaderComponent, PortfolioAboutComponent, PortfolioHomeComponent, PortfolioMySkillsComponent, PortfolioProjectsComponent, PortfolioContactComponent, PortfolioFooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
